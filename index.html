@@ -4,7 +4,7 @@
 <head>
     <title>StarCatcher - Software Development</title>
 <!--    our link to the javascript file that will control the game actions -->
-    <script type="text/javascript" src="scScripts.js"></script>
+    <script type="text/javascript" src="scScripts3.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!--    out styles will be internal until we need to move them to an external file -->
     <style type="text/css">
@@ -13,8 +13,8 @@
         #game {
             margin-left: auto;
             margin-right: auto;
-            width: 800px;
-            height: 500px;
+            width: 875px;
+            height: 550px;
             background-color: lightblue;
             border-radius: 10px;
         }
@@ -29,13 +29,19 @@
             width: 100px;
             margin-right:40px;
         }
+        body {
+ background-image: url("bigbg.jpg");
+ background-color: #555;
+}
             
     </style>
 </head>
 <body>
-    <h2 class="centerText">Game ON!</h2>
-    <p id="leftSide">Player 2: <span id="p2ScoreDisp">0</span></p>
-    <p id="rightSide">Player 1: <span id="p1ScoreDisp">0</span></p>
+    <h2 class="centerText">Eat Steak, Avoid Salad!</h2>
+    <h3 id="leftSide">Shrek: <span id="p1ScoreDisp">0</span><br>
+        Lives: <span id="p1LivesDisp">3</span></h3>
+    <h3 id="rightSide">Mouth: <span id="p2ScoreDisp">0</span><br>
+        Lives: <span id="p2LivesDisp">3</span></h3>
     <div id="game">
         <canvas id="myCanvas"></canvas>
     </div>
